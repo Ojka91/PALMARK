@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='styles.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div class="app" id="app">
+        <div v-if="error === true">
+            Mecaguendios EL PASSWORD ESTA MAL CAGON
+        </div>
+        <div class="main" v-if="view === false">
+            <input type="text" placeholder="Escribeaki EL PUTO PASSWORD" id="elInput">
+            <button @click="pepe()">Dale Aki Pa entrar en el Bideo</button>
+        </div>
+        <div class="main" v-if="view === true">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=orfZTwGt9Ms">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- vuejs development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
